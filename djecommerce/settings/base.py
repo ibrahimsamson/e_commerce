@@ -74,6 +74,12 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend'
 )
+
+ACCOUNT_FORMS = {
+'signup': 'core.forms.CustomSignupForm',
+}
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 
